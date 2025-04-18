@@ -1,0 +1,43 @@
+📸 Digital Image Processing
+│
+├── 🟡 1. Digital Images (Sayısal Görüntüler)
+│   ├── Sampling (Örnekleme)
+│   ├── Quantization (Nicemleme)
+│   └── Image as Matrix of Pixels
+│
+├── 🔵 2. Point Operations (Noktasal İşlemler)
+│   ├── İşlem: s = T(r)
+│   ├── Her piksel tek başına işlenir
+│   └── Alt Başlıklar:
+│       ├── 🔹 Identity (Kimlik): s = r
+│       ├── 🔹 Negative: s = 255 - r
+│       ├── 🔹 Brightness Adjustment (Parlaklık Değişimi)
+│       ├── 🔹 Thresholding (Eşikleme)
+│       ├── 🔹 Contrast Stretching (Kontrast Genişletme)
+│       └── 🔹 Intensity-Level Slicing (Yoğunluk Dilimleme)
+│
+├── 🟣 3. Intensity Transformations
+│   ├── Log Transform:     s = c * log(1 + r)
+│   ├── Inverse Log:       s = 10^(cr) - 1
+│   └── Gamma Correction:  s = c * r^γ
+│
+├── 🟠 4. Dynamic Range
+│   ├── Rd = Imax / Imin
+│   ├── Kalite ve kontrastı belirler
+│   └── HDR ve ekran farkları
+│
+├── 🟢 5. Transfer Function
+│   ├── Piksel değeri ↔️ Ekrandaki parlaklık
+│   └── Gözün algısına uygunluk için gamma kullanılır
+│
+├── 🔴 6. Histogram
+│   ├── Histogram nedir: h(r)
+│   ├── Normalized Histogram: p(r)
+│   ├── Histogram Changes:
+│   │   ├── Brightness → kayar
+│   │   └── Contrast → genişler/daralır
+│   ├── Histogram Equalization
+│   │   └── Kontrastı artırmak için eşitleme
+│   └── Histogram Specification
+│       ├── Hedef histogram belirleme
+│       └── s = T₂⁻¹(T₁(r))
